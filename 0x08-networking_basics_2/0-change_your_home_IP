@@ -1,4 +1,3 @@
-@@ -0,0 +1,9 @@
 #!/usr/bin/env bash
 # Configures an Ubuntu server as follows:
 #   - localhost resolves to 127.0.0.2
@@ -8,23 +7,3 @@ cp /etc/hosts ~/hosts.new
 echo "127.0.0.2		localhost" > ~/hosts.new
 echo "8.8.8.8		facebook.com" >> ~/hosts.new
 cp -f ~/hosts.new /etc/hosts
-4 changes: 4 additions & 0 deletions 4
-0x08-networking_basics_2/1-show_attached_IPs
-@@ -0,0 +1,4 @@
-#!/usr/bin/env bash
-# Displays all acive IPv4 addresses on the machine.
-
-ifconfig | grep -Eo "inet (addr:)?([0-9]*\.){3}[0-9]*" | cut -b 11-
-6 changes: 6 additions & 0 deletions 6
-0x08-networking_basics_2/100-port_listening_on_localhost
-@@ -0,0 +1,6 @@
-#!/usr/bin/env bash
-# Listens on port 98 on localhost.
-
-while true; do
-  nc -l localhost 98
-done
-1 change: 1 addition & 0 deletions 1
-0x08-networking_basics_2/README.md
-@@ -0,0 +1 @@
-0x08-networking_basics_2
